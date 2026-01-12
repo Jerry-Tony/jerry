@@ -3,77 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 日劇觀影總結</title>
+    <title>2025 日劇觀影總結 - 寬幅版</title>
     <style>
         body {
             font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
             line-height: 1.8;
             color: #333;
-            max-width: 850px;
+            /* 將最大寬度放大到 1200px */
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f4f4f4;
+            padding: 40px 30px;
+            background-color: #ececec;
         }
         .container {
             background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         header {
-            border-bottom: 2px solid #333;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
+            border-bottom: 3px solid #1a1a1a;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
         }
         .intro {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: #444;
+            letter-spacing: 0.5px;
         }
         h2 {
-            background-color: #2c3e50;
+            background: linear-gradient(90deg, #2c3e50, #4ca1af);
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            margin-top: 50px;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-top: 60px;
+            font-size: 1.6em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .drama-grid {
+            /* 針對寬版面設計，讓大區塊也能有呼吸感 */
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
         .drama-block {
-            margin-bottom: 40px;
+            margin-bottom: 45px;
+            padding: 20px 0;
         }
         .drama-title {
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: bold;
-            color: #e67e22;
+            color: #c0392b;
             margin-top: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             display: block;
-            border-left: 5px solid #e67e22;
-            padding-left: 15px;
+            border-left: 8px solid #c0392b;
+            padding-left: 20px;
         }
         .content {
             white-space: pre-wrap;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.05em;
             text-align: justify;
         }
         .recommend-for {
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-            color: #856404;
-            padding: 12px 20px;
-            border-radius: 6px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-left: 5px solid #28a745;
+            color: #155724;
+            padding: 15px 25px;
+            border-radius: 4px;
             font-weight: bold;
             display: inline-block;
+            margin-top: 10px;
         }
         .footer {
-            margin-top: 60px;
+            margin-top: 80px;
             text-align: center;
-            font-size: 0.9em;
-            color: #888;
-        }
-        hr {
-            border: 0;
+            font-size: 1em;
+            color: #999;
             border-top: 1px solid #eee;
-            margin: 30px 0;
+            padding-top: 30px;
+        }
+        /* 針對財前教授與 Netflix 特殊標題色 */
+        .special-section h2 {
+            background: linear-gradient(90deg, #8e44ad, #c33764);
         }
     </style>
 </head>
@@ -87,7 +101,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="drama-grid">
         <h2>一定要看</h2>
         
         <div class="drama-block">
@@ -118,7 +132,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="drama-grid">
         <h2>不看有點可惜</h2>
         
         <div class="drama-block">
@@ -154,7 +168,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="drama-grid">
         <h2>SP特區</h2>
         
         <div class="drama-block">
@@ -193,14 +207,14 @@ ESCAPE:一兆遊戲的佐野勇斗主演所以拉出來看看，前半段還滿�
 我只有一個希望….古佃任三郎什麼時候可以重出江湖……即使拍爛了也沒關係</div>
     </section>
 
-    <section>
+    <section class="special-section">
         <h2>衝著財前教授一定要看</h2>
         <div class="content">私人銀行家
 教練刑警
 總評:只要還能看到唐澤壽明演出，一定收看</div>
     </section>
 
-    <section>
+    <section class="special-section">
         <h2>Netflix花了很多錢，but….</h2>
         <div class="content">玻璃之心(佐藤健x町田啟太 x 志尊淳)
 10Dance(竹內涼真 x 町田啟太)
@@ -208,7 +222,7 @@ ESCAPE:一兆遊戲的佐野勇斗主演所以拉出來看看，前半段還滿�
     </section>
 
     <div class="footer">
-        <p>2025-2026 日劇觀影誌</p>
+        <p>2025-2026 日劇觀影總結記錄</p>
     </div>
 </div>
 
